@@ -20,7 +20,7 @@ export default function paintMap(ctx, anomalies, transports, enemies, bounties, 
             ctx.arc(x, y, effectiveRadius, 0, 2 * Math.PI);
             ctx.lineWidth = 4;
             
-            ctx.fillStyle = `rgb(255, 255, 255, 0.${strength > 0 ? strength / 3 : 1})`;
+            ctx.fillStyle = `rgb(0, 0, 0, 0.${strength > 0 ? strength / 3 : 1})`;
             ctx.strokeStyle = 'black'
             ctx.fill();
             ctx.stroke();
