@@ -19,7 +19,7 @@ function Stats() {
             const response = await axios.get('https://games-test.datsteam.dev/stats/magcarp');
             const result = await response.data;
 
-            const ourRealm = result.realms['test-endless-115'].players.filter((player) => player.player === 'Punctum')[0];
+            const ourRealm = result.realms['test-endless-116'].players.filter((player) => player.player === 'Punctum')[0];
             // console.log(ourRealm);
             setStats(ourRealm);
         } catch (e) {
